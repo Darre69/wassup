@@ -27,7 +27,7 @@ body {
 
 .titel a {
     text-decoration: none;
-    font-size: 54px; /* Adjust to your desired size */
+    font-size: 54px; 
     font-weight: bold;
     color: #FFFDD0;
 }
@@ -76,7 +76,7 @@ body {
   transform: scaleX(1);
 }
 body  {
-    --s: 45px; /* control the size */
+    --s: 45px;
     --c1: #1eaaee;
     --c2: #171717;
     --c: #0000 71%, var(--c1) 0 79%, #0000 0;
@@ -99,7 +99,7 @@ body  {
     height: auto;
  }
 
- /* From Uiverse.io by Smit-Prajapati */ 
+
 .searchhello {
     position: absolute;
     background: linear-gradient(135deg, rgb(179, 208, 253) 0%, rgb(164, 202, 248) 100%);
@@ -188,28 +188,28 @@ body  {
     align-items: flex-start;
     gap: 10px;
     padding: 10px;
-    flex-wrap: nowrap; /* Ensure cards stay on the same row */
-    width: 100%; /* Ensure the container takes full width */
-    box-sizing: border-box; /* Include padding and border in width */
+    flex-wrap: nowrap;
+    width: 100%; 
+    box-sizing: border-box; 
 }
 
 .kort {
     background-color: #f4f4f4;
     border-radius: 35px;
-    width: 45%; /* Ensure two cards fit side by side */
+    width: 45%; 
     overflow: hidden;
     text-align: center;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
 }
 
 .bildreal {
     width: 10%;
     height: auto;
-    border-bottom: 2px solid #ccc; /* Optional border to separate image */
+    border-bottom: 2px solid #ccc;
 }
 
 .kort h3 {
