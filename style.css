@@ -1,0 +1,224 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Rethink Sans;
+    
+}
+
+body {
+    margin: 0 130px;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.container-nav {
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    max-height: 100%;
+    align-items: center;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-image: linear-gradient(to bottom, #11334e, #354586, #5164a8, #5269ad, #8aa5ee);
+;
+
+ 
+}
+
+.titel a {
+    text-decoration: none;
+    font-size: 54px; /* Adjust to your desired size */
+    font-weight: bold;
+    color: #FFFDD0;
+}
+
+.topnav {
+    display: flex;
+    gap: 40px;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+    font-size: 54px;
+    
+
+}
+
+.topnav a {
+    text-decoration: none;
+    color: #FFFDD0;
+    font-size: 27px;
+    margin-right: 45px;
+
+}
+.topnav a {
+	color: #FFFDD0;
+  position: relative;
+  text-decoration: none;
+}
+
+.topnav a::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 4px;
+  border-radius: 4px;
+  background-color: #FFFDD0;
+  bottom: 0;
+  left: 0;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .3s ease-in-out;
+}
+
+.topnav a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+body  {
+    --s: 45px; /* control the size */
+    --c1: #1eaaee;
+    --c2: #171717;
+    --c: #0000 71%, var(--c1) 0 79%, #0000 0;
+    --_s: calc(var(--s) / 2) / calc(2 * var(--s)) calc(2 * var(--s));
+    background: linear-gradient(45deg, var(--c)) calc(var(--s) / -2) var(--_s),
+      linear-gradient(135deg, var(--c)) calc(var(--s) / 2) var(--_s),
+      radial-gradient(var(--c1) 35%, var(--c2) 37%) 0 0 / var(--s) var(--s);
+}
+ .cat-section {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+ }
+
+ #catbild {
+    width: 2000px;
+    max-width: 100%;
+    height: auto;
+ }
+
+ /* From Uiverse.io by Smit-Prajapati */ 
+.searchhello {
+    position: absolute;
+    background: linear-gradient(135deg, rgb(179, 208, 253) 0%, rgb(164, 202, 248) 100%);
+    border-radius: 1000px;
+    padding: 10px;
+    display: grid;
+    place-content: center;
+    z-index: 1;
+    max-width: 300px;
+    margin: 0 10px;
+    top: 44%;
+    left: 15%;
+  }
+ 
+  
+  .catsearch {
+    position: relative;
+    width: 100%;
+    border-radius: 50px;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+  
+  .catsearch::after, .catsearch::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+    position: absolute;
+  }
+  
+  .catsearch::before {
+    top: -1px;
+    left: -1px;
+    background: linear-gradient(0deg, rgb(218, 232, 247) 0%, rgb(255, 255, 255) 100%);
+    z-index: -1;
+  }
+  
+  .catsearch::after {
+    bottom: -1px;
+    right: -1px;
+    background: linear-gradient(0deg, rgb(163, 206, 255) 0%, rgb(211, 232, 255) 100%);
+    box-shadow: rgba(79, 156, 232, 0.7019607843) 3px 3px 5px 0px, rgba(79, 156, 232, 0.7019607843) 5px 5px 20px 0px;
+    z-index: -2;
+  }
+  
+  .input {
+    padding: 10px;
+    width: 100%;
+    background: linear-gradient(135deg, rgb(218, 232, 247) 0%, rgb(214, 229, 247) 100%);
+    border: none;
+    color: #9EBCD9;
+    font-size: 20px;
+    border-radius: 50px;
+  }
+  
+  .input:focus {
+    outline: none;
+    background: linear-gradient(135deg, rgb(239, 247, 255) 0%, rgb(214, 229, 247) 100%);
+  }
+  
+  .search__icon {
+    width: 50px;
+    aspect-ratio: 1;
+    border-left: 2px solid white;
+    border-top: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-radius: 50%;
+    padding-left: 12px;
+    margin-right: 10px;
+  }
+  
+  .search__icon:hover {
+    border-left: 3px solid white;
+  }
+  
+  .search__icon path {
+    fill: white;
+  }
+
+  .korten {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 10px;
+    flex-wrap: nowrap; /* Ensure cards stay on the same row */
+    width: 100%; /* Ensure the container takes full width */
+    box-sizing: border-box; /* Include padding and border in width */
+}
+
+.kort {
+    background-color: #f4f4f4;
+    border-radius: 35px;
+    width: 45%; /* Ensure two cards fit side by side */
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+}
+
+.bildreal {
+    width: 10%;
+    height: auto;
+    border-bottom: 2px solid #ccc; /* Optional border to separate image */
+}
+
+.kort h3 {
+    margin-top: 15px;
+    font-size: 1.5em;
+}
+
+.kort p {
+    margin-top: 10px;
+    font-size: 1em;
+    color: #666;
+}
